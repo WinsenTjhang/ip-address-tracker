@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+hr {
+  border-style: none;
+  border-left: #EAE8E8 solid 2px;
+}
+
+header {
+  background-image: url("../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+  min-height: 252px;
+}
+
+h1 {
+  color: white;
+  font-weight: 500;
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+input {
+  width: 500px;
+  height: 55px;
+  padding: 0 20px;
+  border-radius: 10px 0 0 10px;
+  border-style: none;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+button {
+  height: 56.5px;
+  width: 45px;
+  border-style: none;
+  background-color: black;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: invert(0.12);
+}
+
+button:hover img {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.info-bar {
+  background-color: #fff;
+  width: 83vw;
+  margin: 20px auto 0;
+  z-index: 2;
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-bar:first-child {
+  padding-top: 28px;
+}
+
+.info-box {
+  text-align: center;
+  height: 55px;
+}
+
+.info-box h4 {
+  color: #969696;
+  font-weight: 700;
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+}
+
+.info-box p {
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#mapid {
+  height: 60vh;
+  z-index: 1;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    position: relative;
+    height: 150px;
+    width: 1050px;
+    margin: auto;
+  }
+  .info-bar {
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: 150px;
+  }
+  .info-bar:first-child {
+    padding-top: 0;
+  }
+  .info-box {
+    width: 255px;
+    height: 95px;
+    padding-left: 30px;
+    text-align: left;
+  }
+  .info-box h4 {
+    color: #969696;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+  }
+  .info-box p {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  #mapid {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 40vh;
+  }
+  h1 {
+    font-size: 1.7rem;
+    padding: 20px 0;
+  }
+  input {
+    width: 75vw;
+    font-size: 0.9rem;
+  }
+  hr {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
