@@ -11,6 +11,7 @@
 body {
     font-family: 'Rubik',
         sans-serif;
+    height: 100%;
 }
 
 hr {
@@ -22,8 +23,7 @@ header {
     background-image: url("../images/pattern-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
-    min-height: 252px;
+    max-height: 255px;
 }
 
 h1 {
@@ -107,8 +107,8 @@ button {
 }
 
 #mapid {
-    height: 60vh;
     z-index: 1;
+    height: 75vh;
 }
 
 @media (min-width:600px) {
@@ -128,6 +128,7 @@ button {
         justify-content: space-between;
         width: 1000px;
         height: 150px;
+
         &:first-child {
             padding-top: 0;
         }
@@ -153,16 +154,13 @@ button {
         }
     }
 
-    #mapid {
-        height: 65vh;
-    }
 
 }
 
 @media (max-width:600px) {
 
     header {
-        height: 40vh;
+        height: 300px;
     }
 
     h1 {
