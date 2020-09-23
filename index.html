@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    <link rel="stylesheet" href="style/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style/style.css" />
 
-    <!-- Leaflet map link -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
+  <!-- Leaflet map link -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
 
-    <title>Frontend Mentor | IP Address Tracker</title>
-  </head>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 
-  <body>
-    <header>
-      <h1>IP Address Tracker</h1>
-      <div class="search">
-        <input type="text" id="ip-search" placeholder="Search for any IP address or domain" />
-        <button type="submit" onclick="getInput()" id="mybtn">
-          <img src="images/icon-arrow.svg" alt="icon-arrow" />
-        </button>
-      </div>
-    
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+
+<body>
+  <header>
+    <h1>IP Address Tracker</h1>
+    <div class="search">
+      <input type="text" id="ip-search" placeholder="Search for any IP address or domain" />
+      <button type="submit" onclick="getInput()" id="mybtn">
+        <img src="images/icon-arrow.svg" alt="icon-arrow" />
+      </button>
+    </div>
+
 
     <div class="wrapper">
       <div class="info-bar">
         <div class="info-box">
           <h4>IP ADDRESS</h4>
-          <div id="ip"></div>
+          <div class="info" id="ip"></div>
         </div>
 
         <hr width="1" size="70" />
 
         <div class="info-box">
           <h4>LOCATION</h4>
-          <div id="location"></div>
+          <div class="info" id="location"></div>
         </div>
 
         <hr width=" 1" size="70" />
 
         <div class="info-box">
           <h4>TIMEZONE</h4>
-          <div id="timezone"></div>
+          <div class="info" id="timezone"></div>
         </div>
 
         <hr width="1" size="70" />
 
         <div class="info-box">
           <h4>ISP</h4>
-          <div id="isp"></div>
+          <div class="info" id="isp"></div>
         </div>
       </div>
     </div>
 
-    </header>
+  </header>
 
-    <div id="mapid"></div>
+  <div id="mapid"></div>
 
-    <script src="map.js"></script>
-  </body>
+  <script src="map.js"></script>
+</body>
+
 </html>

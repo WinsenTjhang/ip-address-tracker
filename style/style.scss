@@ -46,6 +46,12 @@ input {
     }
 }
 
+.error {
+    color: red;
+    text-align: center;
+    font-weight: 500;
+}
+
 .search {
     display: flex;
     justify-content: center;
@@ -147,7 +153,7 @@ button {
             letter-spacing: 1.5px;
         }
 
-        p {
+        .info {
             padding-top: 10px;
             font-weight: 500;
             font-size: 1.4rem;

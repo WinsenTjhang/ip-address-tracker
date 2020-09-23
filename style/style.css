@@ -45,6 +45,12 @@ input:focus {
   outline: none;
 }
 
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 500;
+}
+
 .search {
   display: flex;
   justify-content: center;
@@ -139,7 +145,7 @@ button:hover img {
     font-size: 0.8rem;
     letter-spacing: 1.5px;
   }
-  .info-box p {
+  .info-box .info {
     padding-top: 10px;
     font-weight: 500;
     font-size: 1.4rem;
